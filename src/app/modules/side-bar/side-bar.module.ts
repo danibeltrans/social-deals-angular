@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { RouterModule } from '@angular/router';
 
 import { SideBarComponent } from './side-bar.component';
 
@@ -13,6 +14,7 @@ import { SideBarComponent } from './side-bar.component';
     CommonModule,
     MatSidenavModule,
     BrowserAnimationsModule,
+    RouterModule,
   ],
   exports: [
     SideBarComponent,
