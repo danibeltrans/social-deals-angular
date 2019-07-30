@@ -1,5 +1,15 @@
 <mat-sidenav-container class="side-nav-container">
-  <mat-sidenav class="side-nav" mode="side" opened>Sidenav content</mat-sidenav>
+  <mat-sidenav class="side-nav" mode="side" opened>
+    Main title or logo
+    <mat-divider></mat-divider>
+    <mat-list class="side-nav-list">
+      <mat-list-item class="list-item" *ngFor="let item of sideNameListItems">
+        <img matListAvatar src="{{ item.logoSrc }}">
+        <h3 matLine> {{ item.name }} </h3>
+      </mat-list-item>
+    </mat-list>
+    <mat-divider></mat-divider>
+  </mat-sidenav>
   <mat-sidenav-content>
     <ng-content></ng-content>
   </mat-sidenav-content>
