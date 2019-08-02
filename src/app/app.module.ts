@@ -5,20 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SideBarModule } from './modules/side-bar/side-bar.module';
 import { DealsfeedComponent } from './modules/dealsfeed/dealsfeed.component';
-import {MatGridListModule} from '@angular/material/grid-list';
-import { SearchBarComponent } from './modules/search-bar/search-bar.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { SearchBarModule } from './modules/search-bar/search-bar.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DealsfeedComponent,
-    SearchBarComponent
+    DealsfeedComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SideBarModule,
+    SearchBarModule,
     MatGridListModule
   ],
   providers: [],
