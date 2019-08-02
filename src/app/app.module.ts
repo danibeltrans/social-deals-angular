@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { SideBarModule } from './modules/side-bar/side-bar.module';
 import { DealsfeedComponent } from './modules/dealsfeed/dealsfeed.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { SearchBarComponent } from './modules/search-bar/search-bar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DealsfeedComponent
+    DealsfeedComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
