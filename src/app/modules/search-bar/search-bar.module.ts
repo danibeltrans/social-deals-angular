@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 import { SearchBarComponent } from './search-bar.component';
 
@@ -10,7 +11,8 @@ import { SearchBarComponent } from './search-bar.component';
   ],
   imports: [
     CommonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
   ],
   exports: [
     SearchBarComponent
